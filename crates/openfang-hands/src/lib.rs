@@ -6,6 +6,7 @@
 
 pub mod bundled;
 pub mod registry;
+pub mod zero_guardrails;
 
 use chrono::{DateTime, Utc};
 use openfang_types::agent::AgentId;
