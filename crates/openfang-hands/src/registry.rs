@@ -1,5 +1,5 @@
 //! Hand registry — manages hand definitions and active instances.
-
+use crate::zero_guardrails::register_hand;
 use crate::bundled;
 use crate::{
     HandDefinition, HandError, HandInstance, HandRequirement, HandResult, HandSettingType,
