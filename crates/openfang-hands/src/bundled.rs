@@ -5,6 +5,9 @@ use crate::{parse_hand_toml, HandDefinition, HandError};
 /// Returns all bundled hand definitions as (id, HAND.toml content, SKILL.md content).
 pub fn bundled_hands() -> Vec<(&'static str, &'static str, &'static str)> {
     vec![
+        (   "zero-guardrails",
+             include_str!("hands/zero_guardrails/HAND.toml"),
+        ),
         (
             "clip",
             include_str!("../bundled/clip/HAND.toml"),
