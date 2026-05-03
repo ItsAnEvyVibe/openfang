@@ -6,7 +6,8 @@ use crate::{parse_hand_toml, HandDefinition, HandError};
 pub fn bundled_hands() -> Vec<(&'static str, &'static str, &'static str)> {
     vec![
         (   "zero-guardrails",
-             include_str!("hands/zero_guardrails/HAND.toml"),
+            include_str!("hands/zero_guardrails/HAND.toml"),
+            include_str!("../bundled/zero_guardrails/SKILL.md"),
         ),
         (
             "clip",
